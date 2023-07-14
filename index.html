@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de pokemon do zé</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.png"  height="105" alt="Logo pokemon">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="e" data-name="Pikachu" data-description="Pokemon inicial elétrico.">
+            <img
+              src="./src/imagens/e.jpg"
+              alt="Personagem pikachu"
+            />
+          </li>
+          <li class="personagem" id="h" data-name="Squirtle" data-description="Pokemon inicial aquático.">
+            <img
+              src="./src/imagens/h.jpg"
+              alt="Personagem squirtle"
+            />
+          </li>
+
+          <li class="personagem" id="d" data-name="Charmander" data-description="Pokemon inicial de fogo.">
+            <img
+              src="./src/imagens/d.jpg"
+              alt="Personagem charmander"
+            />
+          </li>
+
+          <li class="personagem" id="g" data-name="Raichu" data-description="Evolução do pikachu.">
+            <img
+              src="./src/imagens/g.jpg"
+              alt="Personagem raichu"
+            />
+          </li>
+
+          <li class="personagem" id="a" data-name="Blastoise" data-description="Evolução do squirtle">
+            <img
+              src="./src/imagens/a.jpg"
+              alt="Personagem Blastoise"
+            />
+          </li>
+
+          <li class="personagem" id="c" data-name="Charizard" data-description=" Evolução do charmander.">
+            <img
+              src="./src/imagens/c.jpg"
+              alt="Personagem charizard"
+            />
+          </li>
+
+          
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/f.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Pikachu</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Pokemon inicial elétrico.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
